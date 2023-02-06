@@ -2,4 +2,93 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+}
+
+:root {
+    --bgNav: #255EE9;
+    --bgBody: #FFFFFF;
+    --bgSection: #F5F5F5;
+    --bgNavButton: #FFFFFF;
+    --bgDarkNavButton: #23272A;
+    --navText: #FFFFFF;
+    --navDarkText: #000000;
+    --mainTitle: #000000;
+    --mainText: #000000;
+    --bgMainButton: #7289DA;
+    --mainTextButton: #FFFFFF;
+    --footerTitle: #7289DA;
+    --bgFooterButton: #7289DA;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    min-width: 1200px;
+}
+
+h1 {
+    display: none;
+}
+
+.dFlex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dFlexCenter {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    margin: 0 18%;
+}
+
+.containerSmall {
+    margin: 0 27%;
+    
+}
+
+nav {
+    background-color: var(--bgNav);
+    padding: 1rem 1rem;
+    color: var(--navText);
+    font-size: 0.9rem;
+}
+
+.navItems {
+    padding: 0 1rem;
+}
+
+.bgHeaderButton {
+    color: var(--navDarkText);
+    font-weight: 300;
+    background-color: var(--bgNavButton);
+    border-radius: 10px;
+    padding: 0.3rem 0.6rem;
+}
+
+.bgHeaderDarkButton {
+    color: var(--navText);
+    font-weight: 300;
+    background-color: var(--bgDarkNavButton);
+    border-radius: 10px;
+    padding: 0.3rem 0.6rem;
+
+}
+
+.hero {
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 42rem;
+}
+
+h2 {
+    margin: 5rem 0 2rem;
 }
